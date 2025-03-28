@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes,Navigate} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from './context/AuthContext';
@@ -12,13 +12,22 @@ function App() {
     <Router>
       <AuthProvider>
         <Routes>
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/signup" element={<SignUp />} />
-          <Route exact path="/users" element={<UsersList />} />
-          <Route path="*" element={<Navigate to="/login" replace />} />
-
+          <Route path="/login" element={<Login />} /> 
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/users" element={<UsersList />} />
+          <Route path="*" element={<Navigate to="/login" replace />} /> {/* This is fine as is */}
         </Routes>
-        <ToastContainer position="top-right" autoClose={3000} />
+        <ToastContainer 
+          position="top-right" 
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </AuthProvider>
     </Router>
   );

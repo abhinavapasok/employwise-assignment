@@ -1,6 +1,6 @@
 EmployWise Assignment
 
-Live URL: https://employwise-assignment-1.netlify.app/login
+Live URL: https://employwise-assignment-1.netlify.app
 
 A React application for user management, integrating with the Reqres API (https://reqres.in/). This project features authentication, a paginated user list with search functionality, user editing/deletion, and a responsive UI built with Tailwind CSS and Shadcn components.
 
