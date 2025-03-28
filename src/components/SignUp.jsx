@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Card,
   CardContent,
@@ -146,9 +146,9 @@ const SignUp = () => {
             <div className="text-center mt-4">
               <p className="text-sm text-gray-600">
                 Already have an account?{" "}
-                <a href="/login" className="text-green-600 hover:underline">
+                <Link to="/login" className="text-green-600 hover:underline">
                   Log in
-                </a>
+                </Link>
               </p>
             </div>
           </form>

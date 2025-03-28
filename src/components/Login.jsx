@@ -109,12 +109,6 @@ const Login = () => {
                   Sign up
                 </Link>
               </p>
-              <a
-                href="#"
-                className="block mt-2 text-sm text-blue-600 hover:underline"
-              >
-                Forgot Password?
-              </a>
             </div>
           </form>
         </CardContent>
