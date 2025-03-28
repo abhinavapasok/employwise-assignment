@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "@/context/AuthContext";
 import {
   Card,
   CardContent,
@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 import { Alert, AlertDescription } from "./ui/alert";
 import { LockIcon, MailIcon } from "lucide-react";
 import {Link} from 'react-router-dom'
-import api from '../services/api'
+import api from '@/services/api'
 
 const Login = () => {
   const [email, setEmail] = useState("");

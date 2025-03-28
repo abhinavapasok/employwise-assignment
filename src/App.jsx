@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes,Navigate} from 'react-router-dom
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthProvider } from './context/AuthContext';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
-import UsersList from './components/UsersList';
+import Login from '@/components/Login';
+import SignUp from '@/components/SignUp';
+import UsersList from '@/components/UsersList';
 
 function App() {
   return (

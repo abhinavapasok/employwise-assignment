@@ -7,12 +7,12 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "./ui/card";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
-import { Alert, AlertDescription } from "./ui/alert";
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { UserPlusIcon, MailIcon, LockIcon } from "lucide-react";
-import api from '../services/api'
+import api from '@/services/api'
 
 const Signup = () => {
   const [email, setEmail] = useState("");
