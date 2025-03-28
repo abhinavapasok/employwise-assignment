@@ -1,5 +1,7 @@
 EmployWise Assignment
 
+Live URL: https://employwise-assignment-1.netlify.app/login
+
 A React application for user management, integrating with the Reqres API (https://reqres.in/). This project features authentication, a paginated user list with search functionality, user editing/deletion, and a responsive UI built with Tailwind CSS and Shadcn components.
 
 Features
@@ -27,26 +29,19 @@ Prerequisites
 
 Setup Instructions
 1. Clone the Repository:
-   git clone https://github.com/yourusername/employwise-assignment.git
+   git clone https://github.com/abhinavapasok/employwise-assignment
    cd employwise-assignment
 
 2. Install Dependencies:
-   npm install
+   pnpm install
 
-3. Initialize Shadcn UI (if not already included in the repo):
-   npx shadcn-ui@latest init
-   Follow the prompts to configure Tailwind CSS and set up the components/ui directory.
-
-4. Add Pagination Component (if not already included):
-   npx shadcn-ui@latest add pagination
-
-5. Run the Application:
-   npm start
-   The app will start at http://localhost:3000.
+3. Run the Application:
+   pnpm start
+   The app will start at http://localhost:5173.
 
 Usage
 1. Login:
-   - Navigate to /.
+   - Navigate to /login.
    - Use credentials:
      - Email: eve.holt@reqres.in
      - Password: cityslicka
@@ -64,9 +59,6 @@ Usage
    - Edit or delete users via buttons on each card.
    - Logout from the top-right button.
 
-4. Edit User:
-   - Click "Edit" on a user card to update their details.
-   - Save changes to return to the users list.
 
 Project Structure
 src/
@@ -74,7 +66,6 @@ src/
 │   ├── Login.js          # Login page
 │   ├── SignUp.js         # Sign-up page
 │   ├── UsersList.js      # Paginated user list with search
-│   └── EditUser.js       # User edit form
 ├── context/
 │   └── AuthContext.js    # Authentication context
 ├── components/ui/
@@ -89,18 +80,6 @@ Assumptions
 - Pagination: Fetches all users initially to enable search across all pages, assuming a small dataset (Reqres has 12 users total).
 - Shadcn Setup: Assumes Shadcn components are manually added or installed via the CLI.
 
-Deployment
-To deploy the app (e.g., on Netlify):
-1. Build the Project:
-   npm run build
-
-2. Deploy to Netlify:
-   - Push the repository to GitHub.
-   - Connect your GitHub repo to Netlify.
-   - Set the build command to npm run build and publish directory to build.
-   - Deploy and access the live URL (e.g., https://your-app-name.netlify.app).
-
-Live URL: [Insert Live URL Here After Deployment]
 
 License
 This project is for educational purposes and not licensed for production use.
